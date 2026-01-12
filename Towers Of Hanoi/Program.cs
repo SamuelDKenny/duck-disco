@@ -68,4 +68,42 @@ static void TowerMove(int[] towerA, int[] towerB)
     }
 
     //find value of target top
+    int tCheck = 0;
+    int iTarget = 0;
+
+    for (int i = 0; i < towerB.Length; i++)
+    {
+        if (towerB[i] > 0)
+        {
+            tCheck = towerB[i];
+        }
+        else
+        {
+            tCheck = 0;
+        }
+    }
+
+    //find target index to replace
+    for (int i = towerB.Length - 1; i >= 0; i--)
+    {
+        if (towerB[i] == 0)
+        {
+            iTarget = i;
+            break;
+        }
+    }
+
+    validMove = moving < tCheck || tCheck == 0;
+
+    if (validMove)
+    {
+        towerB[iTarget] = moving;
+        towerA[iMoving] = 0;
+    }
+    else
+    {
+        Console.WriteLine();
+        Console.WriteLine("Smallest must stay on top!\n");
+    }
+
 }
