@@ -7,20 +7,81 @@ var t3 = new int[] { 0, 0, 0 };
 DisplayTowers(t1, t2, t3);
 
 //win condition
-//while(t3[0] == 0)
-// {
-//get user input
-int inputFrom;
-int inputTo;
-Console.Write("\nEnter the tower number to move from (1, 2, or 3): ");
-string userChoice = Console.ReadLine();
-int.TryParse(userChoice, out inputFrom);
+while(t3[0] == 0)
+{
+    //get user input
+    int inputFrom;
+    int input2;
+    Console.Write("\nEnter the tower number to move from (1, 2, or 3): ");
+    string userChoice = Console.ReadLine();
+    int.TryParse(userChoice, out inputFrom);
 
-//convert input to tower choice
+    //convert input to tower choice
+    switch (inputFrom)
+    {
+        case 1:
 
+            TowerMove(t1, t2);
 
+        break;
 
-// }
+        case 2:
+        
+            if (t2[2] == 0)
+            {
+                Console.WriteLine("There is nothing here to move!\n");
+                break;
+            }
+
+            Console.Write("\nWhich tower would you like to move to: ");
+            string choice2 = Console.ReadLine();
+            if (int.TryParse(choice2, out input2))
+            {
+                if (input2 == 1)
+                {
+                    TowerMove(t2, t1);
+                }
+
+                else if (input2 == 2)
+                {
+                    break;
+                }
+
+                else if (input2 == 3)
+                {
+                    TowerMove(t2, t3);
+                }
+
+                else
+                {
+                    Console.WriteLine($"There is no tower - {input2}"); ;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+
+        break;
+
+        case 3:
+
+            TowerMove(t3, t2);
+
+        break;
+
+        default:
+
+            Console.WriteLine($"\nInvalid input! \"{inputFrom}\"");
+            Console.WriteLine("please enter tower number.");
+
+        break;
+           
+    }
+
+    DisplayTowers(t1, t2, t3);
+
+}
 
 
 //display towers method
@@ -28,12 +89,12 @@ int.TryParse(userChoice, out inputFrom);
 static void DisplayTowers(int[] t1, int[] t2, int[] t3)
 {
     Console.Clear();
-    var discs = new string[] { "     |     ", "  [===]  ", " [=====] ", "[=======]" };
+    var discs = new string[] { "     |     ", "   [===]   ", "  [=====]  ", " [=======] " };
 
     Console.WriteLine();
-    Console.WriteLine("     -Tower1-   -Tower2-   -Tower3-  ");
+    Console.WriteLine("      -Tower1-    -Tower2-    -Tower3-  ");
     Console.WriteLine();
-    Console.WriteLine("        |          |           |      ");
+    Console.WriteLine("         |           |           |      ");
 
     for (int i = 0; i < t1.GetLength(0); i++)
     {
