@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shut The Box")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c159b4d3514b7b9a88bd701c25b69ebbaf85e30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aeffc5a9e40a2a95bbc5a4554aa2850bb35f167f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shut The Box")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shut The Box")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

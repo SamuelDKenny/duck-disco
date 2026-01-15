@@ -24,7 +24,11 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Samue\\OneDrive\\Documents\\Projects\\duck-disco\\Towers Of Hanoi\\Program.cs",
               "RelativeToolTip": "Program.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAANAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAADwAAAANAAAAAAAAAA==",
+>>>>>>> a2c4d6d (completed main body of code to towers... little tweaking for error messages needed)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-04T18:52:47.922Z",
               "EditorCaption": ""
