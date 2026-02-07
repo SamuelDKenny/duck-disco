@@ -30,6 +30,7 @@ while(t3[0] == 0)
             if (t2[2] == 0)
             {
                 Console.WriteLine("There is nothing here to move!\n");
+                Thread.Sleep(2000);
                 break;
             }
 
@@ -54,12 +55,14 @@ while(t3[0] == 0)
 
                 else
                 {
-                    Console.WriteLine($"There is no tower - {input2}"); ;
+                    Console.WriteLine($"There is no tower - {input2}");
+                    Thread.Sleep(2000);
                 }
             }
             else
             {
                 Console.WriteLine("Invalid input");
+                Thread.Sleep(2000);
             }
 
         break;
@@ -74,14 +77,18 @@ while(t3[0] == 0)
 
             Console.WriteLine($"\nInvalid input! \"{inputFrom}\"");
             Console.WriteLine("please enter tower number.");
+            Thread.Sleep(2000);
 
-        break;
+            break;
            
     }
 
     DisplayTowers(t1, t2, t3);
 
 }
+//win message
+Console.WriteLine("\nCongratulations! You win!");
+Console.ReadLine();
 
 
 //display towers method
@@ -126,6 +133,7 @@ static void TowerMove(int[] towerA, int[] towerB)
     {
         Console.WriteLine();
         Console.WriteLine("There is nothing here to move!\n");
+        Thread.Sleep(2000);
     }
 
     //find value of target top
@@ -165,6 +173,7 @@ static void TowerMove(int[] towerA, int[] towerB)
     {
         Console.WriteLine();
         Console.WriteLine("Smallest must stay on top!\n");
+        Thread.Sleep(2000);
     }
 
 }

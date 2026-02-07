@@ -15,10 +15,14 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6df78ff115e141deab0be67291dc22ce16d6af20")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aeffc5a9e40a2a95bbc5a4554aa2850bb35f167f")]
 >>>>>>> a2c4d6d (completed main body of code to towers... little tweaking for error messages needed)
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2c4d6d1c124bde3738844e7a9b9f4438488b553")]
+>>>>>>> b149eb7 (Error Messages Now visable for 2 sec. win message Created.)
 [assembly: System.Reflection.AssemblyProductAttribute("Towers Of Hanoi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Towers Of Hanoi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
