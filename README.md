@@ -35,9 +35,6 @@ The goal is simple: move the entire stack from the first peg to another peg.
 - No disk may be placed on top of a smaller disk.
 
 
-# 🚧 Under Construction 🚧
-This game is still in development. Expect frequent updates and changes.
-
 
 
 
